@@ -40,7 +40,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageStat
 # PROJECT PATHS
 # ============================================================
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent
 OUTPUTS_DIR = ROOT / "outputs"
 
 MODEL_FILE = ROOT / "degradation_estimator_model.joblib"
