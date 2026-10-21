@@ -1,0 +1,105 @@
+{
+  "feature_columns": [
+    "width",
+    "height",
+    "aspect_ratio",
+    "file_size",
+    "bytes_per_pixel",
+    "is_jpeg",
+    "is_png",
+    "is_webp",
+    "mean_r",
+    "mean_g",
+    "mean_b",
+    "std_r",
+    "std_g",
+    "std_b",
+    "gray_mean",
+    "gray_std",
+    "entropy",
+    "edge_mean",
+    "edge_std",
+    "laplacian_variance",
+    "gradient_mean",
+    "gradient_std",
+    "median_residual_mean",
+    "median_residual_std",
+    "has_jpeg_quant_table",
+    "jpeg_quant_mean",
+    "jpeg_quant_std",
+    "jpeg_quant_min",
+    "jpeg_quant_max",
+    "block_h_edge",
+    "block_h_nonedge",
+    "block_v_edge",
+    "block_v_nonedge",
+    "block_h_excess",
+    "block_v_excess",
+    "dct_mid_energy",
+    "dct_high_energy",
+    "dct_high_fraction",
+    "dct_zero_ac_fraction"
+  ],
+  "class_names": {
+    "0": "Original",
+    "1": "Forwarded"
+  },
+  "selected_model": "ExtraTrees",
+  "grouped_cv_accuracy": 1.0,
+  "degradation_score_note": "Dataset-relative heuristic indicator, not literal percentage of pixels changed.",
+  "degradation_baseline": {
+    "features": {
+      "bytes_per_pixel": {
+        "original_median": 2.1711287064985796,
+        "forwarded_median": 0.3015414151278409,
+        "direction": -1,
+        "spread": 2.264255408084754
+      },
+      "jpeg_quant_mean": {
+        "original_median": 1.0,
+        "forwarded_median": 11.5859375,
+        "direction": 1,
+        "spread": 11.5859375
+      },
+      "dct_high_fraction": {
+        "original_median": 0.01589989848434925,
+        "forwarded_median": 0.015479736030101776,
+        "direction": -1,
+        "spread": 0.03607935425825417
+      },
+      "dct_zero_ac_fraction": {
+        "original_median": 0.1521887400793651,
+        "forwarded_median": 0.6214735243055556,
+        "direction": 1,
+        "spread": 0.6057032025049603
+      },
+      "median_residual_mean": {
+        "original_median": 3.193176031112671,
+        "forwarded_median": 3.231172800064087,
+        "direction": 1,
+        "spread": 4.986868774890899
+      },
+      "laplacian_variance": {
+        "original_median": 1065.1336669921875,
+        "forwarded_median": 1071.003662109375,
+        "direction": 1,
+        "spread": 2936.8005981445312
+      },
+      "block_h_excess": {
+        "original_median": -0.40898895263671875,
+        "forwarded_median": -0.06391716003417969,
+        "direction": 1,
+        "spread": 0.7740987300872804
+      },
+      "block_v_excess": {
+        "original_median": -0.2788515090942383,
+        "forwarded_median": 0.0669095516204834,
+        "direction": 1,
+        "spread": 0.7826619148254395
+      }
+    },
+    "description": "Dataset-relative heuristic indicator from 0 to 100. It is not a literal percentage of pixels changed."
+  },
+  "train_sources": 36,
+  "test_sources": 13
+}
